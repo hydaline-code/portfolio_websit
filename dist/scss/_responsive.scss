@@ -1,0 +1,85 @@
+
+$breakpoint-md: 768px;
+
+@media (min-width: $breakpoint-md) {
+
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+    margin-top: 2rem;
+    
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &_item {
+        display: inline;
+        padding-right: 1.5rem;
+      } 
+
+      &_link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .about_bio {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+
+    &_bio-image {
+      height: 40vh;
+    }
+
+    &_items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .text-secondary {
+      font-size: 3rem ;
+    }
+  }
+
+  .contacts_list {
+    grid-template-columns: auto auto auto;
+    margin-top: 2rem;
+  }
+
+  .contact_address:hover {
+    color:  set-text-color($secondary-color);
+    @include transition-ease
+  }
+
+  .contact_email:hover {
+    color:  set-text-color($secondary-color);
+    @include transition-ease
+  }
+
+  .contact_phone:hover {
+    color:  set-text-color($secondary-color);
+    @include transition-ease
+  }
+  
+  .social-icons_c {
+    top: 80%;
+    align-items: center;
+    margin-left: 1%;
+    margin-top: 1rem;
+
+    & > a {
+      margin-left: 2rem;
+    }
+  }
+
+  .projects_bio-image {
+    height: 50vh;
+ }
+
+}
